@@ -1,74 +1,74 @@
 class Aluno {
-    #senha; // atributo privado
-    /**
-     * @param {number} grupo // Grupo do aluno.
-     * @param {string} nome // Nome do aluno.
-     * @param {string} apelido // Apelido do aluno.
-     * @param {string} senha // Senha do aluno.
-     */
+    #senha;
     constructor(grupo, nome, apelido, senha) {
-
-        this.grupo = grupo; 
-        this.nome = nome;
-        this.apelido = apelido;
-        this.#senha = senha; // senha como atributo privado
-        this.estaVivo = true; // todos os alunos começam vivos
-        this.localAtual = "Portaria do SENAI"; // todos os alunos começam na portaria
-        this.tempoDesocupado = null; // todos os alunos começam ocupados
+        this.grupo = this.validarGrupo(grupo);
+        this.nome = this.validarNome(nome);
+        this.apelido = this.validarApelidoNaoNulo(apelido);
+        this.#senha = this.validarSenha(senha);
+        this.estaVivo = true;
+        this.localAtual = "Portaria do SENAI";
     }
 
-    validarNome(nome){
-        // Verifica se o nome é uma string e se contém apenas letras e espaços
-        if (typeof nome === "string" && /^[A-Za-z\s]+$/.test(nome)) {
-            return true;
+    validarNome(nome) {
+        // Se o nome não for uma string ou conter números, lançar um erro
+        if (!nome || typeof nome !== "string" || nome.match(/[^a-zA-Z]/)) {
+            // "Throw" é uma palavra-chave que lança um erro
+            throw new Error( 
+                "Campo --nome-- inválido. Ele deve ser uma string e não conter números!"
+            );
         }
-        return false; 
+        return nome;
     }
 
-    validarGrupo(grupo){
-        // Verifica se o grupo é um número inteiro entre 1 e 6
-        if (typeof grupo === "number" && grupo >= 1 && grupo <= 6) {
-            return true;
+    validarGrupo(grupo) {
+        // Se o grupo não for um número inteiro ou não estiver entre 1 e 6, lançar um erro
+        if (!Number.isInteger(grupo) || grupo < 1 || grupo > 6) {
+            // "Throw" é uma palavra-chave que lança um erro
+            throw new Error(
+                "Campo --grupo-- é obrigatório e deve ser um número de 1 a 6!"
+            );
         }
-        return false; 
+        return grupo;
     }
 
-    validarApelidoNaoNulo(apelido){
-        // Verifica se o apelido é uma string e se não é null
-        if (apelido !== null) {
-            return true;
+    validarApelidoNaoNulo(apelido) {
+        // Se o apelido for nulo, lançar um erro
+        if (!apelido) {
+            // "Throw" é uma palavra-chave que lança um erro
+            throw new Error("Campo --apelido-- é obrigatório!");
         }
-        return false; 
+        return apelido;
     }
 
     validarSenha(senha) {
-        // Verifica se a senha é uma string e se contém ao menos uma letra e um número
-        if (typeof senha === "string" && /[A-Za-z]/.test(senha) && /\d/.test(senha)) {
-            return true;
+        // Se a senha não for uma string ou conter caracteres especiais, lançar um erro
+        if (!senha || typeof senha !== "string" || senha.match(/[^a-zA-Z0-9]/)) {
+            // "Throw" é uma palavra-chave que lança um erro
+            throw new Error(
+                "Campo --senha-- é obrigatório! Ela deve ser uma string podendo ter dígitos e letras."
+            );
         }
-        return false; 
+        return senha;
     }
 
-    atualizarCampos(grupo, nome, apelido, senha) {
-        // Atualiza os campos do aluno
-        if (this.validarGrupo(grupo)) {
-            this.grupo = grupo;
+    atualizarCampos({ grupo, nome, apelido, senha }) {
+        if (grupo) {
+            this.grupo = this.validarGrupo(grupo); // Se o grupo for passado, validar o grupo
         }
-        if (this.validarNome(nome)) {
-            this.nome = nome;
+        if (nome) {
+            this.nome = this.validarNome(nome); // Se o nome for passado, validar o nome
         }
-        if (this.validarApelidoNaoNulo(apelido)) {
-            this.apelido = apelido;
+        if (apelido) {
+            this.apelido = this.validarApelidoNaoNulo(apelido); // Se o apelido for passado, validar o apelido
         }
-        if (this.validarSenha(senha)) {
-            this.#senha = senha;
+        if (senha) {
+            this.#senha = this.validarSenha(senha); // Se a senha for passada, validar a senha
         }
     }
 
-    pegarSenha(){
-        // Retorna a senha do aluno
+    pegarSenha() {
         return this.#senha;
     }
 }
 
-export default Aluno; // Exporta a classe Aluno
+export default Aluno;
