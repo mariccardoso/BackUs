@@ -16,6 +16,17 @@ cadastroRoutes.post("/adicionar", (req, res) => {
     
 });
 
+cadastroRoutes.delete("/remover", (req, res) => {
+    const senha = req.params.senha; // Buscar aluno pela senha
+    const index = alunos.findIndex((aluno) => aluno.pegarSenha() === senha);
+
+    if (index === -1) {
+        return res.status(404).json({ message: "Aluno não encontrado!" });
+    }
+
+    alunos.splice(index, 1); // Remove o aluno da lista
+    res.status(200).json({ message: "Aluno removido com sucesso!" });
+
 // PUT - Atualizar dados de um aluno existente
 cadastroRoutes.put("/atualizar/:senha", (req, res) => {
     try {
@@ -42,9 +53,5 @@ cadastroRoutes.put("/atualizar/:senha", (req, res) => {
     }
 });
 
-// DELETE - Remover um aluno pela senha
-cadastroRoutes.delete("/remover/:senha", (req, res) => {
-    
-});
 
 export default cadastroRoutes;
