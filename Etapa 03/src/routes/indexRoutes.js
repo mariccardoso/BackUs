@@ -7,8 +7,12 @@ rotas.get("/", (req, res) => {
 });
 
 
-rotas.use((req, res) => {
-    res.status(404).json({ message: "Rota não encontrada." });
-});
+import cadastroRoutes from "./cadastroRoutes.js";
+
+// rotas.use((req, res) => {
+//     res.status(404).json({ message: "Rota não encontrada." });
+// });
+
+rotas.use("/cadastro", cadastroRoutes);
 
 export default rotas;
