@@ -28,9 +28,10 @@ cadastroRoutes.post("/adicionar", (req, res) => {
     }
 });
 
+
 // GET - Listar todos os alunos
 cadastroRoutes.get("/listar", (req, res) => {
-
+    res.status(200).send(alunos);
 });
 
 // POST - Adicionar um novo aluno
