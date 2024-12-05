@@ -88,7 +88,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
 
 - **Etapa 3:**
     - Criação da UML da classe Aluno corrigida
-    - Método **DELETE** para buscar todos os alunos
+    - Rota **DELETE** para buscar todos os alunos
 
 <h3 ><img src="https://static.wikia.nocookie.net/among-us/images/0/00/Purple_%281%29.png/revision/latest?cb=20210831162636&path-prefix=pt-br" width="18px"> Sophia Balico </h3 > 
 
