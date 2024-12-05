@@ -49,7 +49,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
     - Criação dos arquivos de rotas
     - Criação das rotas de cadastro
     - Pesquisa sobre a implementação dos métodos e rotas no Postman
-    - método **PUT** para atualizar os dados do aluno
+    - Rota **PUT** para atualizar os dados do aluno
     - Revisar e corrigir os métodos de validação
     - Testar no Postman
 
@@ -63,12 +63,8 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
 
 - **Etapa 3:**
     - Criação da UML da classe Aluno corrigida
-
-    - Método **GET** para buscar todos os alunos na pasta routes, dentro do arquivo cadastroRoutes.js
-
-    - Rota **GET** para buscar todos os alunos
-
-
+    - Realização do diagrama de classe conforme o código do professor
+      
 <h3 ><img src="https://static.wikia.nocookie.net/among-us/images/4/4d/Yellow_%281%29.png/revision/latest?cb=20210831160627&path-prefix=pt-br" width="18px"> Maria Eduarda Reis </h3 >
 
 <img src="https://avatars.githubusercontent.com/u/158165914?v=4" width="120px;" alt="Duda"/>
@@ -80,10 +76,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
 - **Etapa 3**:
     - Criação da UML da classe Aluno corrigida
 
-    - Método **GET** para buscar todos os alunos na pasta routes, dentro do arquivo cadastroRoutes.js
-
-    - Rota **GET** para buscar todos os alunos
-
+    - Rota **GET** para buscar todos os alunos - encontra-se na pasta routes, dentro do arquivo cadastroRoutes.js
 
 <h3 ><img src="https://static.wikia.nocookie.net/among-us/images/3/37/Red_%281%29.png/revision/latest/thumbnail/width/360/height/450?cb=20240128174753&path-prefix=pt-br" width="18px"> Anna Fiochi </h3 >
 
@@ -97,10 +90,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
 - **Etapa 3:**
     - Criação da UML da classe Aluno corrigida
 
-    - Método **DELETE** para buscar todos os alunos na pasta routes, dentro do arquivo cadastroRoutes.js
-
-    - Rota **DELETE** para buscar todos os alunos
-
+    - Rota **DELETE** para deletar os alunos - encontra-se na pasta routes, dentro do arquivo cadastroRoutes.js
 
 <h3 ><img src="https://static.wikia.nocookie.net/among-us/images/0/00/Purple_%281%29.png/revision/latest?cb=20210831162636&path-prefix=pt-br" width="18px"> Sophia Balico </h3 > 
 
@@ -115,7 +105,4 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
     - Ajuda na criação dos métodos de cadastro 
     - Pesquisa sobre a implementação dos métodos e rotas no Postman
 
-    - Método **POST** para buscar todos os alunos na pasta routes, dentro do arquivo cadastroRoutes.js
-
-    - Rota **POST** para buscar todos os alunos
-
+    - Rota **POST** para adicionar os alunos - encontra-se na pasta routes, dentro do arquivo cadastroRoutes.js
