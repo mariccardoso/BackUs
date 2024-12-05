@@ -15,15 +15,23 @@ O projeto foi dividido em 4 etapas, sendo elas:
 3. **Criação das Rotas:** Nesta etapa, a equipe se reuniu para criar as rotas do projeto, com o objetivo de integrar as classes criadas anteriormente.
 4. **Example:** Esta etapa ainda não foi realizada.
 
+## Diagrama UML- classe Aluno 📊
+
+Aqui, você pode conferir o diagrama UML da classe Aluno, que foi criado na primeira etapa do projeto:
+
+<img src="./assets/img/UML.png" alt="Diagrama UML da classe Aluno" width="100%">
+
 ## Membros do Grupo 🧑‍💻
 
 Aqui, você pode conferir os membros do grupo e suas respectivas atividades em cada etapa do projeto:
 
-<h3 ><img src="https://static.wikia.nocookie.net/amongus/images/0/00/P%C3%A1lido.png/revision/latest?cb=20210613094404&path-prefix=es" width="18px"> Mariana Cardoso <h3 >
+<h3 ><img src="https://static.wikia.nocookie.net/amongus/images/0/00/P%C3%A1lido.png/revision/latest?cb=20210613094404&path-prefix=es" width="18px"> Mariana Cardoso </h3>
 
 <img src="https://avatars.githubusercontent.com/u/158165810?v=4" width="120px;" alt="Mariana Cardoso"/>
 
-- **Etapa 1:** 
+**Etapa 1:** 
+<br>
+
   - Criação do Diagrama de Classe (UML) no Miro
   - Criação das Classes (Jogo, Dev, Jogador, Mensagem, Sabotador)
 
@@ -45,7 +53,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
     - Revisar e corrigir os métodos de validação
     - Testar no Postman
 
-<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/0/00/Cyan_%281%29.png/revision/latest?cb=20210831160836&path-prefix=pt-br" width="18px"> Sophia Gomes <h3 >
+<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/0/00/Cyan_%281%29.png/revision/latest?cb=20210831160836&path-prefix=pt-br" width="18px"> Sophia Gomes </h3 >
 
 <img src="https://avatars.githubusercontent.com/u/163409667?v=4" width="120px;" alt="Soso Gomes"/>
 
@@ -57,7 +65,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
     - Criação da UML da classe Aluno corrigida
     - Método **GET** para buscar todos os alunos
 
-<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/4/4d/Yellow_%281%29.png/revision/latest?cb=20210831160627&path-prefix=pt-br" width="18px"> Maria Eduarda Reis <h3 >
+<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/4/4d/Yellow_%281%29.png/revision/latest?cb=20210831160627&path-prefix=pt-br" width="18px"> Maria Eduarda Reis </h3 >
 
 <img src="https://avatars.githubusercontent.com/u/158165914?v=4" width="120px;" alt="Duda"/>
 
@@ -69,7 +77,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
     - Criação da UML da classe Aluno corrigida
     - Método **GET** para buscar todos os alunos
 
-<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/3/37/Red_%281%29.png/revision/latest/thumbnail/width/360/height/450?cb=20240128174753&path-prefix=pt-br" width="18px"> Anna Fiochi <h3 >
+<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/3/37/Red_%281%29.png/revision/latest/thumbnail/width/360/height/450?cb=20240128174753&path-prefix=pt-br" width="18px"> Anna Fiochi </h3 >
 
 
 <img src="https://avatars.githubusercontent.com/u/158165846?v=4" width="120px;" alt="Anna Fiota"/>
@@ -82,7 +90,7 @@ Aqui, você pode conferir os membros do grupo e suas respectivas atividades em c
     - Criação da UML da classe Aluno corrigida
     - Método **DELETE** para buscar todos os alunos
 
-<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/0/00/Purple_%281%29.png/revision/latest?cb=20210831162636&path-prefix=pt-br" width="18px"> Sophia Balico <h3 > 
+<h3 ><img src="https://static.wikia.nocookie.net/among-us/images/0/00/Purple_%281%29.png/revision/latest?cb=20210831162636&path-prefix=pt-br" width="18px"> Sophia Balico </h3 > 
 
 <img src="https://avatars.githubusercontent.com/u/158165611?v=4" width="120px;" alt="Soso"/>
 

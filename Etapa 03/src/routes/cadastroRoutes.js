@@ -49,6 +49,7 @@ cadastroRoutes.delete("/remover", (req, res) => {
 
     alunos.splice(index, 1); // Remove o aluno da lista
     res.status(200).json({ message: "Aluno removido com sucesso!" });
+});
 
 // PUT - Atualizar dados de um aluno existente
 cadastroRoutes.put("/atualizar/:senha", (req, res) => {
@@ -76,5 +77,4 @@ cadastroRoutes.put("/atualizar/:senha", (req, res) => {
     }
 });
 
-
-export default cadastroRoutes;
+export default cadastroRoutes; 
