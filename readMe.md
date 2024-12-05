@@ -19,7 +19,7 @@ O projeto foi dividido em 4 etapas, sendo elas:
 
 Aqui, você pode conferir o diagrama UML da classe Aluno, que foi criado na primeira etapa do projeto:
 
-<img src="./assets/img/UML.png" alt="Diagrama UML da classe Aluno" width="50%" align="center" >
+<img src="./assets/img/Grupo3 - UML.png" alt="Diagrama UML da classe Aluno" width="50%" align="center" >
 
 ## Membros do Grupo 🧑‍💻
 
